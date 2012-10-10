@@ -1,5 +1,7 @@
-node_modules
-public-min
-*.log
 .DS_Store
-.sass-cache
+.bundle
+.sass-cache/*
+public/stylesheets/*
+sass/.sass-cache/
+#Gemfile.local
+#Gemfile.local.lock
