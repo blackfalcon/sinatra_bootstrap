@@ -1,8 +1,10 @@
-#Sinatra Bootstrap
+# Sinatra Bootstrap
 
-Just for the sake of not repeating myself
+A boilerplate Sinatra project to help you get up and running fast. 
 
-##Instillation 
-Easy, create a `new directory`, for our example, `foo` then run the following command
+## Contents Enclosed
 
-`git clone --bare https://github.com/blackfalcon/sinatra_bootstrap.git path/to/foo`
+Sinatra Bootstrap includes a few Heroku niceties like a Procfile, a config.ru file, and a handy `asset:precompile` Rake task for compiling your Sass/SCSS for production. (Heroku will perform that task as part of the standard deployment process. All you have to to do is `git push heroku`)
+
+## Installation
+`git clone --bare https://github.com/jedfoster/sinatra_bootstrap.git New_Project`
