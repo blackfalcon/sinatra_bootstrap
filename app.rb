@@ -1,11 +1,19 @@
 require 'rubygems'
 require 'compass'
-#require 'slim'
 
 # If you're using bundler, you will need to add this
 require 'bundler/setup'
 
 require 'sinatra'
+require 'sinatra/partial'
+
+set :partial_template_engine, :erb
+
+helpers do
+  include ERB::Util
+  alias_method :code, :html_escape  # For escaping and showing HTML code partials in the browser
+end
+
 
 puts "This is process #{Process.pid}"
 
@@ -22,12 +30,6 @@ get '/stylesheets/:name.css' do
   content_type 'text/css', :charset => 'utf-8'
   scss(:"../sass/#{params[:name]}", Compass.sass_engine_options )
 end
-
-
-# Wanna use Slim, rock it!
-# ------------------------------------------
-# Slim::Engine.set_default_options :pretty => true
-# Slim::Engine.set_default_options :sections => true
 
 get '/' do
   erb :index
