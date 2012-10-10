@@ -1,4 +1,5 @@
 require 'rubygems'
+require 'sass'
 require 'compass'
 # require 'thin'  # Uncomment here and in Gemfile for better performance in production, especially on Heroku
 
@@ -26,6 +27,10 @@ configure do
 end
 
 # at a minimum, the main sass file must reside within the ./views directory. here, we create a ./views/stylesheets directory where all of the sass files can safely reside.
+# ------------------------------------------
+#           I don't recommend running this route in production; precompile your Sass and 
+# WARNING:  remove this route. As long as your compiled CSS files are in a directory below 
+#           /public, Sinatra will automatically find and serve them.
 # ------------------------------------------
 get '/stylesheets/:name.css' do
   content_type 'text/css', :charset => 'utf-8'
