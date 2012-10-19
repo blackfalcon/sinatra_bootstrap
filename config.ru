@@ -1,8 +1,7 @@
-## This is what makes Heroku happy :D
-
 require './app'
 
-## There is no need to set directories here anymore;
-## Just run the application
+# Gzip responses
+use Rack::Deflater
 
+# Run the application
 run Sinatra::Application
