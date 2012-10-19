@@ -17,8 +17,6 @@ helpers do
 end
 
 
-puts "This is process #{Process.pid}"
-
 
 # Wanna use Compass? Rock it!
 # ------------------------------------------
