@@ -9,4 +9,4 @@ Sinatra Bootstrap includes a few Heroku niceties like a Procfile, a config.ru fi
 Also included is [Jammit](http://documentcloud.github.com/jammit/#configuration), for concatenating and compressing your JavaScript. In addition to compiling your Sass, the `asset:precompile` Rake task also uses Jammit to package up your JavaScript, and the layout file will reference the compress JS file when the app is run in production.
 
 ## Installation
-`git clone --bare https://github.com/jedfoster/sinatra_bootstrap.git New_Project`
+`git clone --bare https://github.com/blackfalcon/sinatra_bootstrap.git New_Project`
