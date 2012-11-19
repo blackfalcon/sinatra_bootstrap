@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'sass'
 require 'compass'
-# require 'thin'  # Uncomment here and in Gemfile for better performance in production, especially on Heroku
+require 'thin'
 
 # If you're using bundler, you will need to add this
 require 'bundler/setup'
